@@ -14,7 +14,7 @@ function DarkMode() {
 function Datos() {
     var Correo = $(".Footer_Input").val()
     var Fecha = new Date();
-    var re =/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    var re =/^([\da-zA-Z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
     var Validar = 0;
     if(!re.exec(Correo)) {
         Swal.fire({
